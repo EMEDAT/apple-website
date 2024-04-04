@@ -58,7 +58,7 @@ canvas {
     @apply sm:py-32 py-20 sm:px-10 px-5 w-full flex justify-center
   }
 
-  /* Fixed scrolling ability on devices */
+  /* Fixed scrolling ability on devices, clor of 3d iphone mersh */
   .scrolled {
     @apply min-w-40 max-w-60 h-screen overflow-y-auto bg-white
   }
@@ -128,6 +128,7 @@ canvas {
   }
 }
 
+/* Fxed visible scroll bar on PC */
 .slide {
   height: 100%;
   overflow: hidden;
