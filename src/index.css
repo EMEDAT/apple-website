@@ -10,7 +10,7 @@
 
 body {
   color: white;
-  width: 100dvw;
+  width: 100%;
   overflow-x: hidden;
   height: 100%;
   background: #000;
@@ -55,7 +55,12 @@ canvas {
   }
 
   .common-padding {
-    @apply sm:py-32 py-20 sm:px-10 px-5
+    @apply sm:py-32 py-20 sm:px-10 px-5 w-full flex justify-center
+  }
+
+  /* Fixed scrolling ability on devices */
+  .scrolled {
+    @apply min-w-40 max-w-60 h-screen overflow-y-auto
   }
 
   .section-heading {
@@ -121,4 +126,12 @@ canvas {
   .g_fadeIn {
     @apply opacity-0 translate-y-[100px]
   }
+}
+
+.slide {
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  ::-webkit-scrollbar {display:none;}
 }

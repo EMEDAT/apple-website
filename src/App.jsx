@@ -10,6 +10,7 @@ import * as Sentry from '@sentry/react';
 
 const App = () => {
   return (
+    <div className='slide'>
     <main className="bg-black">
       <Navbar />
       <Hero />
@@ -19,6 +20,7 @@ const App = () => {
       <HowItWorks />
       <Footer />
     </main>
+    </div>
   )
 }
 
