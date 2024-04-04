@@ -60,7 +60,7 @@ canvas {
 
   /* Fixed scrolling ability on devices */
   .scrolled {
-    @apply min-w-40 max-w-60 h-screen overflow-y-auto
+    @apply min-w-40 max-w-60 h-screen overflow-y-auto bg-white
   }
 
   .section-heading {
@@ -132,6 +132,5 @@ canvas {
   height: 100%;
   overflow: hidden;
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-  ::-webkit-scrollbar {display:none;}
+  scrollbar-width: none;
 }
